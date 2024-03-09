@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: #FAFBFF;
+}
+
+.container{
+    width: 100%;
+    margin: 284px 0;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    max-width: 737px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    font-family: "HankenGrotesk";
+}
+
+/* card left */
+
+.card_left{
+    width: 100%;
+    max-width: 368px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(49,44,234,1) 0%, rgba(103,67,255,1) 100%);
+    border-radius: 30px;
+    color: #CBC7FF;
+    padding: 24px 18px;
+}
+
+.result_text{
+    font-size: 1.4rem;
+    padding-top: 40px;
+}
+
+.card_left>p{
+    width: 220px;
+    margin: 15px auto 46px auto;
+    font-size: 1rem;
+    font-family: "HankenGrotesk";
+}
+
+.circle{
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 30px;
+    background: linear-gradient(180deg, rgba(76,35,202,1) 0%, rgba(71,52,240,1) 100%);
+}
+
+.text_contain{
+    padding-top: 40px;
+    align-items: center;
+    color: #8377FD;
+    font-weight: 700;
+}
+
+.socre_text{
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+
+.great_text{
+    padding-top: 15px;
+    font-size: 1.75rem;
+    color: white;
+}
+
+/*--end card left--*/
+
+/*card right*/
+.card_right{
+    width: 100%;
+    font-family: "HankenGrotesk";
+    text-align: left;
+    padding: 40px 40px 40px 40px;
+    background-color: #fff;
+}
+
+.summary_text{
+    color: #262E45;
+    padding-top: 20px;
+}
+
+.contain_marker{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.d_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.d-flex>p{
+    padding-left: 15px;
+}
+
+.marker_red{
+    background-color: #FFF6F5;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: red;
+    
+}
+
+.grey-text{
+    color: #9C96A2;
+    font-weight: 800;
+}
+
+.marker_yellow{
+    background-color: #FFFBF2;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #F7BC48;
+}
+
+.marker_green{
+    background-color: #F2FBFA;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #29A17E;
+}
+
+.marker_blue{
+    background-color: #F3F3FD;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #20299E;
+}
+
+.text_blue{
+    color: #2D2B39;
+    font-weight: 800;
+}
+
+.btn-continue{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 0 0;
+    background-color: #303B59;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn-continue:hover{
+    background: linear-gradient(0deg, rgba(49,44,234,1) 0%, rgba(103,67,255,1) 100%);
+}
+
+/*--end card right--*/
+
+
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        margin: 0 0;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        max-width: 100%;
+    }
+    .card_left{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0 0 30px 30px;
+        padding: 0;
+    }
+
+    .card_right{
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .btn-continue{
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .summary_text{
+        padding-left: 40px;
+    }
+
+}
